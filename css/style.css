@@ -197,25 +197,99 @@ h4 {
     border: 2px solid #f9004d;
     cursor: pointer;
 }
-.service {
+.jobs {
     background: #101010;
     width: 100%;
     padding: 100px 0px;
 }
-.title h2 {
+.jobs .title h2 {
     color: white;
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
-.box {
+.jobs .box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
 }
-.card {
+.jobs .card {
+    height: 365px;
+    width: 335px;
+    padding: 0px 0px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.jobs h4 {
+    color: white;
+    font-size: 100%;
+    margin: 16px 0;
+} 
+.jobs .card img {
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: 85%;
+    transition: 0.5s;
+    border-radius: 16px;
+} 
+.jobs .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 16px;
+} 
+.jobs .card:hover .overlay {
+    opacity: 1;
+} 
+.jobs .card .overlay .button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.jobs .card .overlay .button:hover {
+    background-color: black;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.service {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.service .title h3 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.service .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.service .card {
     height: 365px;
     width: 335px;
     padding: 20px 35px;
@@ -226,25 +300,25 @@ h4 {
     overflow: hidden;
     text-align: center;
 }
-.card i {
+.service .card i {
     font-size: 50px;
     display: block;
     text-align: center;
     margin: 25px 0px;
     color: #f9004d;
 }
-h5 {
+.service h5 {
     color: white;
     font-size: 23px;
     margin-bottom: 15px;
 }
-.pra p {
+.service .pra p {
     color: #fcFc;
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
 }
-.card .button {
+.service .card .button {
     background-color: #f9004d;
     color: white;
     text-decoration: none;
@@ -254,7 +328,7 @@ h5 {
     border-radius: 30px;
     transition: .4s;
 }
-.card .button:hover {
+.service .card .button:hover {
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
