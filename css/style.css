@@ -16,12 +16,10 @@
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content:space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-
+    justify-content: space-around;
+    padding: 45px 5px;
 }
 
 .logo {
@@ -161,12 +159,14 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
 }
 .about-text h2 {
     color: white;
     font-size: 75px;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin: 25px 0;
 }
 .about-text h5 {
     color: white;
